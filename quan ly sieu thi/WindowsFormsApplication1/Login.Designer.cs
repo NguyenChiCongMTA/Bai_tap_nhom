@@ -67,6 +67,7 @@
             this.main_box_pword.Name = "main_box_pword";
             this.main_box_pword.Size = new System.Drawing.Size(288, 20);
             this.main_box_pword.TabIndex = 3;
+            this.main_box_pword.Text = "123";
             // 
             // main_box_uname
             // 
@@ -74,6 +75,7 @@
             this.main_box_uname.Name = "main_box_uname";
             this.main_box_uname.Size = new System.Drawing.Size(288, 20);
             this.main_box_uname.TabIndex = 2;
+            this.main_box_uname.Text = "ncc";
             // 
             // label2
             // 

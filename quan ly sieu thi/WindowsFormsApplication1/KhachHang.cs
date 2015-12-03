@@ -11,20 +11,21 @@ namespace WindowsFormsApplication1
        public string HoTen { get; set; }
        public string SDT { get; set; }
        public string CMND { get; set; }
-       public int level { get; set; }
        public string DiaChi { get; set; }
        public string NoiLamViec { get; set; }
+       public DateTime NS { get; set; }
+
        public KhachHang()
        {
        }
-       public KhachHang(string _HoTen, string _SDT, string _CMND, string _DiaChi, string _NoiLamViec, int _level)
+       public KhachHang(string _HoTen, string _SDT, string _CMND, string _DiaChi, string _NoiLamViec,DateTime _ns)
        {
            HoTen = _HoTen;
            CMND = _CMND;
            SDT = _SDT;
            DiaChi = _DiaChi;
            NoiLamViec = _NoiLamViec;
-           level = _level;
+           NS = _ns;
        }
     }
 }

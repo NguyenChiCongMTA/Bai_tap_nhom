@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
 namespace WindowsFormsApplication1
 {
     public partial class Login : Form
@@ -17,16 +17,36 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
+
+        public static string connectionString = WindowsFormsApplication1.Properties.Settings.Default.QLST;
+        public static SqlConnection con = new SqlConnection(connectionString);
+        public SqlDataAdapter da = new SqlDataAdapter();
+        public DataTable dt = new DataTable();
+        public delegate void delPassData(TextBox text);
         private void main_but_OK_Click(object sender, EventArgs e)
         {
-            //truy van csdl xem co nguoi dung ko
-            //Nếu có khai báo biến người dùng  , mở form quản lí
             User current_usr = new User();
-            //đẩy thông tin người dùng vào curren_user 
-            QuanLy formQL = new QuanLy(current_usr);
-            formQL.Show();
-            this.Hide();
-
+            SqlCommand command = new SqlCommand();
+            command.Connection = con;
+            command.CommandType = CommandType.Text;
+            command.CommandText = "Select * from NHANVIEN where (username=@user) and (pass=@pass)";
+            command.Parameters.Add("@user", SqlDbType.NVarChar, 50).Value = main_box_uname.Text;
+            command.Parameters.Add("@pass", SqlDbType.NVarChar, 50).Value = main_box_pword.Text;
+            da.SelectCommand = command;
+            da.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+                
+                QuanLy ql = new QuanLy();
+                delPassData del = new delPassData(ql.funData);
+                del(this.main_box_uname);
+                ql.Show();
+                Hide();
+            }
+            else
+            {
+                MessageBox.Show("Đăng nhập thất bại. Sai mật khẩu hoặc tên tài khoản");
+            }
         }
     }
 }

@@ -8,14 +8,15 @@ namespace WindowsFormsApplication1
 {
     class User
     {
-        public string HoTen { get; set; }
-        public string ID { get; set; }
-        public DateTime NamSinh { get; set; }
-        public int ID_quanly { get; set; }
-        public string BoPhan { get; set; }
-        public string gt { get; set; }
-        public string que { get; set; }
-        public int Luong { get; set; }
+        public string HoTen;
+        public string ID;
+        public DateTime NamSinh;
+        public int ID_quanly;
+        public string BoPhan;
+        public string gt;
+        public string que;
+        public int Luong;
+       
         public User()
         {
         }

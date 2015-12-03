@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="connect.cs" />
     <Compile Include="hang.cs" />
     <Compile Include="HuongDan.cs">
       <SubType>Form</SubType>
