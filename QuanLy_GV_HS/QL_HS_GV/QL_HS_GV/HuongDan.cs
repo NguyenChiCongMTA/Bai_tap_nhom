@@ -40,6 +40,16 @@ namespace QL_HS_GV
                 str = Application.StartupPath + "\\Huongdan\\HD_GV.mht";
                 webBrowser1.Navigate(str);
             }
+            if (treeView1.SelectedNode.Name == "Nhom")
+            {
+                str = Application.StartupPath + "\\Huongdan\\Nhom.mht";
+                webBrowser1.Navigate(str);
+            }
+            if (treeView1.SelectedNode.Name == "PhanMem")
+            {
+                str = Application.StartupPath + "\\Huongdan\\GioiThieu.mht";
+                webBrowser1.Navigate(str);
+            }
         }
 
         

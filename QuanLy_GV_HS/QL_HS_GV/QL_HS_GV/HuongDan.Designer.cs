@@ -51,9 +51,9 @@
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Left;
             this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Name = "treeView1";
-            treeNode1.Name = "Node1";
+            treeNode1.Name = "Nhom";
             treeNode1.Text = "Nhóm Thực Hiện";
-            treeNode2.Name = "Node2";
+            treeNode2.Name = "PhanMem";
             treeNode2.Text = "Phần Mềm";
             treeNode3.Name = "Node0";
             treeNode3.Text = "GIỚI THIỆU";
