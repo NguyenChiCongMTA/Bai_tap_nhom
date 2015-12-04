@@ -15,7 +15,9 @@ namespace WindowsFormsApplication1
         public HuongDan()
         {
             InitializeComponent();
-            //load file html  chứa nội dung hd vào webroser
+            string str;
+            str = Application.StartupPath + "\\Huong Dan\\HD SD From QL ST.mht";
+            webBrowser1.Navigate(str);
         }
 
         private void button1_Click(object sender, EventArgs e)
