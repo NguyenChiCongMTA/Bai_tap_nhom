@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsApplication2
+﻿namespace QuanLyNhanSu
 {
-    partial class HuongDan_form
+    partial class HuongDanForm
     {
         /// <summary>
         /// Required designer variable.
@@ -37,19 +37,18 @@
             this.webBrowser1.Location = new System.Drawing.Point(0, 0);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(580, 283);
+            this.webBrowser1.Size = new System.Drawing.Size(717, 300);
             this.webBrowser1.TabIndex = 0;
-            this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
             // 
-            // HuongDan_form
+            // HuongDanForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(580, 283);
+            this.ClientSize = new System.Drawing.Size(717, 300);
             this.Controls.Add(this.webBrowser1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "HuongDan_form";
-            this.Text = "Form1";
+            this.Name = "HuongDanForm";
+            this.Text = "HuongDanForm";
+            this.Load += new System.EventHandler(this.HuongDanForm_Load);
             this.ResumeLayout(false);
 
         }

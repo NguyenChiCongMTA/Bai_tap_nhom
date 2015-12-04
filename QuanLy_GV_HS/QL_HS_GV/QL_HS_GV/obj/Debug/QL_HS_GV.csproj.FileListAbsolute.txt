@@ -8,3 +8,6 @@ D:\Học Tập\github\Bai_tap_nhom\Bai2_QL_GV_HS\Solution\QL_HS_GV\QL_HS_GV\obj\
 D:\Học Tập\github\Bai_tap_nhom\Bai2_QL_GV_HS\Solution\QL_HS_GV\QL_HS_GV\obj\Debug\QL_HS_GV.exe
 D:\Học Tập\github\Bai_tap_nhom\Bai2_QL_GV_HS\Solution\QL_HS_GV\QL_HS_GV\obj\Debug\QL_HS_GV.pdb
 D:\Học Tập\github\Bai_tap_nhom\Bai2_QL_GV_HS\Solution\QL_HS_GV\QL_HS_GV\obj\Debug\QL_HS_GV.ThongTin.resources
+C:\Users\Admin\Desktop\Bai_tap_nhom\QuanLy_GV_HS\QL_HS_GV\QL_HS_GV\bin\Debug\QL_HS_GV.exe.config
+C:\Users\Admin\Desktop\Bai_tap_nhom\QuanLy_GV_HS\QL_HS_GV\QL_HS_GV\obj\Debug\QL_HS_GV.exe
+C:\Users\Admin\Desktop\Bai_tap_nhom\QuanLy_GV_HS\QL_HS_GV\QL_HS_GV\obj\Debug\QL_HS_GV.pdb

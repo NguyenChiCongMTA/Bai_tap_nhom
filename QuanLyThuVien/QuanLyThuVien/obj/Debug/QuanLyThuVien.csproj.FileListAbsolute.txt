@@ -20,3 +20,14 @@ C:\Users\admin\Documents\GitHub\Bai_tap_nhom\QuanLyThuVien\QuanLyThuVien\obj\Deb
 C:\Users\admin\Documents\GitHub\Bai_tap_nhom\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Huongdan.resources
 C:\Users\admin\Documents\GitHub\Bai_tap_nhom\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
 C:\Users\admin\Documents\GitHub\Bai_tap_nhom\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\Bai_tap_nhom\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+C:\Users\Admin\Desktop\Bai_tap_nhom\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+C:\Users\Admin\Desktop\Bai_tap_nhom\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
+C:\Users\Admin\Desktop\Bai_tap_nhom\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\Bai_tap_nhom\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.formLogin.resources
+C:\Users\Admin\Desktop\Bai_tap_nhom\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.formManage.resources
+C:\Users\Admin\Desktop\Bai_tap_nhom\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Huongdan.resources
+C:\Users\Admin\Desktop\Bai_tap_nhom\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
+C:\Users\Admin\Desktop\Bai_tap_nhom\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\Bai_tap_nhom\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
+C:\Users\Admin\Desktop\Bai_tap_nhom\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb

@@ -127,5 +127,13 @@ namespace QuanLyNhanSu
             xCMND.Text = dataGridView_xoa.Rows[e.RowIndex].Cells[6].Value.ToString();
             panel3.Enabled = true;
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            HuongDanForm frm = new HuongDanForm();
+            frm.ShowDialog();
+            frm.Close();
+            frm.Dispose();
+        }
     }
 }

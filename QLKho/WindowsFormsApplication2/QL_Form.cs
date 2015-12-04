@@ -71,7 +71,10 @@ namespace WindowsFormsApplication2
 
         private void linkHD_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            //show form chứa html hướng dẫn lên
+            HuongDan_form frm = new HuongDan_form();
+            frm.ShowDialog();
+            frm.Close();
+            frm.Dispose();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -35,6 +35,7 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.tabXoaNS = new System.Windows.Forms.TabPage();
+            this.dataGridView_xoa = new System.Windows.Forms.DataGridView();
             this.xoa_butTim = new System.Windows.Forms.Button();
             this.xoa_boxID = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
@@ -56,6 +57,7 @@
             this.label28 = new System.Windows.Forms.Label();
             this.butDel = new System.Windows.Forms.Button();
             this.tabSuaNS = new System.Windows.Forms.TabPage();
+            this.dataGridView_sua = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.sNgaysinh = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
@@ -97,19 +99,18 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.tabControl = new System.Windows.Forms.TabControl();
-            this.dataGridView_sua = new System.Windows.Forms.DataGridView();
-            this.dataGridView_xoa = new System.Windows.Forms.DataGridView();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.tabTimKiem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabXoaNS.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_xoa)).BeginInit();
             this.panel3.SuspendLayout();
             this.tabSuaNS.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_sua)).BeginInit();
             this.panel1.SuspendLayout();
             this.tabThemNS.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_sua)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_xoa)).BeginInit();
             this.SuspendLayout();
             // 
             // tabTimKiem
@@ -191,6 +192,15 @@
             this.tabXoaNS.TabIndex = 2;
             this.tabXoaNS.Text = "Xóa nhân sự";
             this.tabXoaNS.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView_xoa
+            // 
+            this.dataGridView_xoa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_xoa.Location = new System.Drawing.Point(262, 33);
+            this.dataGridView_xoa.Name = "dataGridView_xoa";
+            this.dataGridView_xoa.Size = new System.Drawing.Size(328, 238);
+            this.dataGridView_xoa.TabIndex = 8;
+            this.dataGridView_xoa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_xoa_CellContentClick);
             // 
             // xoa_butTim
             // 
@@ -386,6 +396,15 @@
             this.tabSuaNS.TabIndex = 1;
             this.tabSuaNS.Text = "Sửa Nhân sự";
             this.tabSuaNS.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView_sua
+            // 
+            this.dataGridView_sua.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_sua.Location = new System.Drawing.Point(267, 33);
+            this.dataGridView_sua.Name = "dataGridView_sua";
+            this.dataGridView_sua.Size = new System.Drawing.Size(328, 238);
+            this.dataGridView_sua.TabIndex = 4;
+            this.dataGridView_sua.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_sua_CellContentClick);
             // 
             // panel1
             // 
@@ -764,29 +783,23 @@
             this.tabControl.Size = new System.Drawing.Size(619, 303);
             this.tabControl.TabIndex = 0;
             // 
-            // dataGridView_sua
+            // linkLabel1
             // 
-            this.dataGridView_sua.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_sua.Location = new System.Drawing.Point(267, 33);
-            this.dataGridView_sua.Name = "dataGridView_sua";
-            this.dataGridView_sua.Size = new System.Drawing.Size(328, 238);
-            this.dataGridView_sua.TabIndex = 4;
-            this.dataGridView_sua.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_sua_CellContentClick);
-            // 
-            // dataGridView_xoa
-            // 
-            this.dataGridView_xoa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_xoa.Location = new System.Drawing.Point(262, 33);
-            this.dataGridView_xoa.Name = "dataGridView_xoa";
-            this.dataGridView_xoa.Size = new System.Drawing.Size(328, 238);
-            this.dataGridView_xoa.TabIndex = 8;
-            this.dataGridView_xoa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_xoa_CellContentClick);
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(558, 16);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(29, 13);
+            this.linkLabel1.TabIndex = 1;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Help";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // formManage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(671, 347);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.tabControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formManage";
@@ -797,10 +810,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabXoaNS.ResumeLayout(false);
             this.tabXoaNS.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_xoa)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.tabSuaNS.ResumeLayout(false);
             this.tabSuaNS.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_sua)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabThemNS.ResumeLayout(false);
@@ -808,9 +823,8 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tabControl.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_sua)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_xoa)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -887,6 +901,7 @@
         private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.DataGridView dataGridView_sua;
         private System.Windows.Forms.DataGridView dataGridView_xoa;
+        private System.Windows.Forms.LinkLabel linkLabel1;
 
     }
 }

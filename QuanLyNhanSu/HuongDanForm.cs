@@ -8,21 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyThuVien
+namespace QuanLyNhanSu
 {
-    public partial class Huongdan : Form
+    public partial class HuongDanForm : Form
     {
-        public Huongdan()
+        public HuongDanForm()
         {
-            
             InitializeComponent();
-            webBrowser1.Navigate(Application.StartupPath + "\\Huong Dan\\HD SD From QL TV.mht") ;
-        
+            string str;
+            str = Application.StartupPath + "\\Huong Dan\\HD SD From QL NS.mht";
+            webBrowser1.Navigate(str);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void HuongDanForm_Load(object sender, EventArgs e)
         {
-            this.Close();
+
         }
     }
 }
