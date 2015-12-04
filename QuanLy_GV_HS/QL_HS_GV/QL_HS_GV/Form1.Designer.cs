@@ -1,6 +1,6 @@
 ﻿namespace QL_HS_GV
 {
-    partial class Form1
+    partial class FormLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -37,7 +37,8 @@
             this.lbEmail = new System.Windows.Forms.Label();
             this.bntDangnhap = new System.Windows.Forms.Button();
             this.bntDangki = new System.Windows.Forms.Button();
-            this.bntHelp = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -124,21 +125,24 @@
             this.bntDangki.UseVisualStyleBackColor = true;
             this.bntDangki.Click += new System.EventHandler(this.bntDangki_Click);
             // 
-            // bntHelp
+            // pictureBox1
             // 
-            this.bntHelp.Location = new System.Drawing.Point(237, 6);
-            this.bntHelp.Name = "bntHelp";
-            this.bntHelp.Size = new System.Drawing.Size(38, 22);
-            this.bntHelp.TabIndex = 15;
-            this.bntHelp.Text = "button1";
-            this.bntHelp.UseVisualStyleBackColor = true;
+            this.pictureBox1.Image = global::QL_HS_GV.Properties.Resources.Untitled;
+            this.pictureBox1.InitialImage = global::QL_HS_GV.Properties.Resources.Untitled;
+            this.pictureBox1.Location = new System.Drawing.Point(241, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // Form1
+            // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Controls.Add(this.bntHelp);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bntDangki);
             this.Controls.Add(this.bntDangnhap);
             this.Controls.Add(this.texEmail);
@@ -148,8 +152,9 @@
             this.Controls.Add(this.textID);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
-            this.Name = "Form1";
+            this.Name = "FormLogin";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,7 +171,7 @@
         private System.Windows.Forms.Label lbEmail;
         private System.Windows.Forms.Button bntDangnhap;
         private System.Windows.Forms.Button bntDangki;
-        private System.Windows.Forms.Button bntHelp;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

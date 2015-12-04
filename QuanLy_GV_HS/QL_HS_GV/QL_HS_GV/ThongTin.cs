@@ -296,6 +296,12 @@ namespace QL_HS_GV
             textCV.Text = dataGV.Rows[e.RowIndex].Cells[5].Value.ToString().Trim();
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            HuongDan hd = new HuongDan();
+            hd.Show();
+        }
+
         
 
     }

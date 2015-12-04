@@ -10,9 +10,9 @@ using System.Windows.Forms;
 using QL_HS_GV.Class;
 namespace QL_HS_GV
 {
-    public partial class Form1 : Form
+    public partial class FormLogin : Form
     {
-        public Form1()
+        public FormLogin()
         {
             InitializeComponent();
         }
@@ -26,6 +26,10 @@ namespace QL_HS_GV
             if (kiemtra == 2)
             {
                 MessageBox.Show("Đăng nhập thành công");
+                ThongTin tg = new ThongTin();
+                tg.Show();
+                FormLogin fm = new FormLogin();
+                fm.Close();
             }
             if (kiemtra == 1)
             {
@@ -47,6 +51,12 @@ namespace QL_HS_GV
             lbEmail.Visible = texEmail.Visible = true;
             texEmail.Text = textID.Text = textPass.Text = null;
             bntDangnhap.Enabled = false;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            HuongDan hd = new HuongDan();
+            hd.Show();
         }
         
     }
