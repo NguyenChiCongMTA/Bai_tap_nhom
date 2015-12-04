@@ -1,3 +1,15 @@
 D:\BaiTapNhom\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
 D:\BaiTapNhom\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 D:\BaiTapNhom\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\admin\Documents\GitHub\Bai_tap_nhom\QuanLyKhachSan\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\admin\Documents\GitHub\Bai_tap_nhom\QuanLyKhachSan\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\admin\Documents\GitHub\Bai_tap_nhom\QuanLyKhachSan\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\admin\Documents\GitHub\Bai_tap_nhom\QuanLyKhachSan\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\admin\Documents\GitHub\Bai_tap_nhom\QuanLyKhachSan\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\admin\Documents\GitHub\Bai_tap_nhom\QuanLyKhachSan\WindowsFormsApplication1\obj\Debug\QLKS.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\GitHub\Bai_tap_nhom\QuanLyKhachSan\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.DPform.resources
+C:\Users\admin\Documents\GitHub\Bai_tap_nhom\QuanLyKhachSan\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.HuongDan.resources
+C:\Users\admin\Documents\GitHub\Bai_tap_nhom\QuanLyKhachSan\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Login.resources
+C:\Users\admin\Documents\GitHub\Bai_tap_nhom\QuanLyKhachSan\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\admin\Documents\GitHub\Bai_tap_nhom\QuanLyKhachSan\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.QLKS.resources
+C:\Users\admin\Documents\GitHub\Bai_tap_nhom\QuanLyKhachSan\WindowsFormsApplication1\obj\Debug\QLKS.csproj.GenerateResource.Cache

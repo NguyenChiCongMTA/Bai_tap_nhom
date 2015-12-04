@@ -123,6 +123,7 @@
             this.QLP_rented_data.Name = "QLP_rented_data";
             this.QLP_rented_data.Size = new System.Drawing.Size(419, 290);
             this.QLP_rented_data.TabIndex = 0;
+            this.QLP_rented_data.Click += new System.EventHandler(this.QLP_rented_data_Click);
             // 
             // QLP_free
             // 
@@ -142,6 +143,7 @@
             this.QLP_free_data.Name = "QLP_free_data";
             this.QLP_free_data.Size = new System.Drawing.Size(404, 289);
             this.QLP_free_data.TabIndex = 0;
+            this.QLP_free_data.Click += new System.EventHandler(this.QLP_free_data_Click);
             // 
             // QLP_all
             // 
@@ -161,6 +163,8 @@
             this.QLP_dataTC.Name = "QLP_dataTC";
             this.QLP_dataTC.Size = new System.Drawing.Size(415, 288);
             this.QLP_dataTC.TabIndex = 0;
+            this.QLP_dataTC.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.QLP_dataTC_CellContentClick);
+            this.QLP_dataTC.Click += new System.EventHandler(this.QLP_dataTC_Click);
             // 
             // tabPage1
             // 
@@ -321,7 +325,7 @@
             this.QLKH_DangThue.Padding = new System.Windows.Forms.Padding(3);
             this.QLKH_DangThue.Size = new System.Drawing.Size(368, 302);
             this.QLKH_DangThue.TabIndex = 0;
-            this.QLKH_DangThue.Text = "Khách hàng đang đặt phòng";
+            this.QLKH_DangThue.Text = "Khách hàng đã đặt phòng";
             this.QLKH_DangThue.UseVisualStyleBackColor = true;
             // 
             // QLP_dataDang_DP
@@ -331,6 +335,7 @@
             this.QLP_dataDang_DP.Name = "QLP_dataDang_DP";
             this.QLP_dataDang_DP.Size = new System.Drawing.Size(358, 288);
             this.QLP_dataDang_DP.TabIndex = 0;
+            this.QLP_dataDang_DP.Click += new System.EventHandler(this.QLP_dataDang_DP_Click);
             // 
             // QLKH_DaTra
             // 
@@ -340,8 +345,9 @@
             this.QLKH_DaTra.Padding = new System.Windows.Forms.Padding(3);
             this.QLKH_DaTra.Size = new System.Drawing.Size(368, 302);
             this.QLKH_DaTra.TabIndex = 1;
-            this.QLKH_DaTra.Text = "Khách hàng đã thuê";
+            this.QLKH_DaTra.Text = "Khách hàng đang thuê";
             this.QLKH_DaTra.UseVisualStyleBackColor = true;
+            this.QLKH_DaTra.Click += new System.EventHandler(this.QLKH_DaTra_Click);
             // 
             // QLKH_dataDa_dat
             // 
@@ -350,6 +356,7 @@
             this.QLKH_dataDa_dat.Name = "QLKH_dataDa_dat";
             this.QLKH_dataDa_dat.Size = new System.Drawing.Size(355, 288);
             this.QLKH_dataDa_dat.TabIndex = 1;
+            this.QLKH_dataDa_dat.Click += new System.EventHandler(this.QLKH_dataDa_dat_Click);
             // 
             // QLKH_all
             // 
@@ -369,6 +376,7 @@
             this.QLKH_dataTC.Name = "QLKH_dataTC";
             this.QLKH_dataTC.Size = new System.Drawing.Size(355, 288);
             this.QLKH_dataTC.TabIndex = 1;
+            this.QLKH_dataTC.Click += new System.EventHandler(this.QLKH_dataTC_Click);
             // 
             // QLKH_Tim
             // 
@@ -394,7 +402,7 @@
             this.QLKH_Tim_butOK.Name = "QLKH_Tim_butOK";
             this.QLKH_Tim_butOK.Size = new System.Drawing.Size(75, 23);
             this.QLKH_Tim_butOK.TabIndex = 8;
-            this.QLKH_Tim_butOK.Text = "button1";
+            this.QLKH_Tim_butOK.Text = "Tìm";
             this.QLKH_Tim_butOK.UseVisualStyleBackColor = true;
             this.QLKH_Tim_butOK.Click += new System.EventHandler(this.QLKH_Tim_butOK_Click);
             // 

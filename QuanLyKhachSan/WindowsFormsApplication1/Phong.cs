@@ -11,9 +11,9 @@ namespace WindowsFormsApplication1
         public int ID { get; set; }
         public DateTime NgayThue { get; set; }
         public DateTime NgayTra { get; set; }
-        public bool TrangThai { get; set; }
-        List< KeyValuePair<string,int> > ThietBi ;
-        public Phong(bool _trangthai,List< KeyValuePair< string,int > > thietbi)
+        public string TrangThai { get; set; }
+        ThietBi ThietBi ;
+        public Phong(string _trangthai,ThietBi thietbi)
         {
             TrangThai = _trangthai;
             ThietBi = thietbi;
@@ -22,10 +22,10 @@ namespace WindowsFormsApplication1
         {
             NgayThue = _ngaythue;
             NgayTra = _ngaytra;
-            if (TrangThai == true)
+            if (TrangThai == "Dang su dung")
             {
                 if (DateTime.Today <= _ngaytra && DateTime.Today >= NgayThue)
-                    TrangThai = false;
+                    TrangThai = "Chua su dung";
             }
         }
         

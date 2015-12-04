@@ -38,10 +38,24 @@ namespace WindowsFormsApplication1
             //Trả kq ra bảng theo loại tìm kiếm đã chọn
             if (QLP_radioSP.Checked)
             {
+                QLP_TP_boxID.Enabled = true;
+                QLP_TP_pan.Enabled = false;
+                if (QLP_TP_boxID.Text.Trim() != "")
+                    QLP_TP_kq.DataSource = connect.TimPhong(QLP_TP_boxID.Text);
+                else
+                    MessageBox.Show("Nhap so phong can tim");
             }
             else
                 if (QLP_radioTGthue.Checked)
                 {
+                    QLP_TP_pan.Enabled = true;
+                    QLP_TP_boxID.Enabled = false;
+                    if (QLP_TP_tgbd.Value < QLP_TP_tgkt.Value)
+                    {
+                        QLP_TP_kq.DataSource = connect.TimPhongTG(QLP_TP_tgbd.Value, QLP_TP_tgkt.Value);
+                    }
+                    else
+                        MessageBox.Show("Thoi gian bat dau nho hon thoi gian ket thuc");
                 }
                 else
                 {
@@ -70,12 +84,33 @@ namespace WindowsFormsApplication1
             //Tìm theo loại đã chọn, đổ vào csdl
             if (QLKH_Tim_radioID.Checked)
             {
+                QLKH_Tim_boxTen.Enabled = false;
+                QLKH_Tim_boxID.Enabled = true;
+                QLKH_Tim_pan.Enabled = false;
+                if (QLKH_Tim_boxID.Text.Trim() != "")
+                    dataGridView1.DataSource = connect.TimKH_CMND(QLKH_Tim_boxID.Text);
+                else
+                    MessageBox.Show("Nhap CMND khach hang");
             }
             if (QLKH_Tim_radioTen.Checked)
             {
+                QLKH_Tim_boxTen.Enabled = true;
+                QLKH_Tim_boxID.Enabled = false;
+                QLKH_Tim_pan.Enabled = false;
+                if (QLKH_Tim_boxTen.Text.Trim() != "")
+                    dataGridView1.DataSource = connect.TimKH_Ten(QLKH_Tim_boxTen.Text);
+                else
+                    MessageBox.Show("Nhap ten khach hang");
             }
             if (QLKH_Tim_radioTG.Checked)
             {
+                QLKH_Tim_boxTen.Enabled = false;
+                QLKH_Tim_boxID.Enabled = false;
+                QLKH_Tim_pan.Enabled = true;
+                if (QLKH_Tim_tgbd.Value<QLKH_Tim_tgkt.Value)
+                    dataGridView1.DataSource = connect.TimKH_TG(QLKH_Tim_tgbd.Value , QLKH_Tim_tgkt.Value);
+                else
+                    MessageBox.Show("Nhap thoi gian bat dau nho hon thoi gian ket thuc");
             }
             
         }
@@ -90,6 +125,46 @@ namespace WindowsFormsApplication1
         {
             HuongDan formHD = new HuongDan();
             formHD.ShowDialog();
+        }
+
+        private void QLP_dataTC_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void QLP_dataTC_Click(object sender, EventArgs e)
+        {
+            QLP_dataTC.DataSource = connect.LoadFullPhong();
+        }
+
+        private void QLP_rented_data_Click(object sender, EventArgs e)
+        {
+            QLP_rented_data.DataSource = connect.LoadPhongSD();
+        }
+
+        private void QLP_free_data_Click(object sender, EventArgs e)
+        {
+            QLP_free_data.DataSource = connect.LoadPhongCSD();
+        }
+
+        private void QLKH_DaTra_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void QLKH_dataTC_Click(object sender, EventArgs e)
+        {
+            QLKH_dataTC.DataSource = connect.LoadFullKH();
+        }
+
+        private void QLKH_dataDa_dat_Click(object sender, EventArgs e)
+        {
+            QLKH_dataDa_dat.DataSource = connect.Load_KHDT(Convert.ToDateTime(DateTime.Now));
+        }
+
+        private void QLP_dataDang_DP_Click(object sender, EventArgs e)
+        {
+            QLP_dataDang_DP.DataSource = connect.Load_KHDaT(Convert.ToDateTime(DateTime.Now));
         }
 
     }

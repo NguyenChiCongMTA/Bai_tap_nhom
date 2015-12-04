@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="connect.cs" />
     <Compile Include="DatPhong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +73,7 @@
     <Compile Include="QLKS.Designer.cs">
       <DependentUpon>QLKS.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThietBi.cs" />
     <EmbeddedResource Include="DatPhong.resx">
       <DependentUpon>DatPhong.cs</DependentUpon>
     </EmbeddedResource>
