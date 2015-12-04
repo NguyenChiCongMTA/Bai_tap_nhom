@@ -1,0 +1,10 @@
+D:\Học Tập\github\Bai_tap_nhom\Bai2_QL_GV_HS\Solution\QL_HS_GV\QL_HS_GV\bin\Debug\QL_HS_GV.exe.config
+D:\Học Tập\github\Bai_tap_nhom\Bai2_QL_GV_HS\Solution\QL_HS_GV\QL_HS_GV\bin\Debug\QL_HS_GV.exe
+D:\Học Tập\github\Bai_tap_nhom\Bai2_QL_GV_HS\Solution\QL_HS_GV\QL_HS_GV\bin\Debug\QL_HS_GV.pdb
+D:\Học Tập\github\Bai_tap_nhom\Bai2_QL_GV_HS\Solution\QL_HS_GV\QL_HS_GV\obj\Debug\QL_HS_GV.csprojResolveAssemblyReference.cache
+D:\Học Tập\github\Bai_tap_nhom\Bai2_QL_GV_HS\Solution\QL_HS_GV\QL_HS_GV\obj\Debug\QL_HS_GV.Form1.resources
+D:\Học Tập\github\Bai_tap_nhom\Bai2_QL_GV_HS\Solution\QL_HS_GV\QL_HS_GV\obj\Debug\QL_HS_GV.Properties.Resources.resources
+D:\Học Tập\github\Bai_tap_nhom\Bai2_QL_GV_HS\Solution\QL_HS_GV\QL_HS_GV\obj\Debug\QL_HS_GV.csproj.GenerateResource.Cache
+D:\Học Tập\github\Bai_tap_nhom\Bai2_QL_GV_HS\Solution\QL_HS_GV\QL_HS_GV\obj\Debug\QL_HS_GV.exe
+D:\Học Tập\github\Bai_tap_nhom\Bai2_QL_GV_HS\Solution\QL_HS_GV\QL_HS_GV\obj\Debug\QL_HS_GV.pdb
+D:\Học Tập\github\Bai_tap_nhom\Bai2_QL_GV_HS\Solution\QL_HS_GV\QL_HS_GV\obj\Debug\QL_HS_GV.ThongTin.resources
